@@ -1,0 +1,38 @@
+canvas, button{
+	display: block !important;
+	margin: 0 auto !important;
+}
+canvas{
+	position: relative;
+}
+button {
+	background-color: #578A34 !important;
+	border-color: #4A752C !important;
+	border-radius: 15px !important;
+	position: absolute;
+	left: 44.2%;
+	top: 578px;
+	display: inline;
+}
+#two {
+	top: 578px;
+	left: 50.2%;
+}
+div {
+	background-color: #578A34 !important;
+	border-color: #578A34 !important;
+	color:  #578A34 !important;
+	border-radius: 15px !important;
+	width: 608px;
+	height: 40px;
+	position: absolute;
+	left: 30.2%;
+	top: 594px;
+}
+body {
+	background: url("../sourses/snake_fon.jpg") repeat center center fixed;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
