@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tetris</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/tetris.css">
-</head>
-<body>
-	<div id="root">
-		<h1>
-			<span style="color: red">T</span> <span style="color: orange">e</span> <span style="color: yellow">t</span> <span style="color: green">r</span> <span style="color: blue">i</span> <span style="color:purple ">s</span>
-		</h1>
-	</div>
+<html>
+ <head>
+  <title>Tetris</title>
+  <link rel='stylesheet' type="text/css" href='./css/tetris.css'/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+ </head>
+ <body>
+ <div  style="margin-left: 30%; margin-bottom: 20px;"><span style="color: red">T</span> <span style="color: orange">e</span> <span style="color: yellow">t</span> <span style="color: green">r</span> <span style="color: blue">i</span> <span style="color:purple ">s</span></div>
+ <div id="tetris">
+  <div id="tetrisleft">
+   <canvas id="tetriscanvas" width="300" height="600"></canvas>
+   <audio id="clearsound" src="./sourses/audio/pop.ogg" preload="auto"></audio>
+   <audio autoplay loop>
+    <source src="./sourses/audio/tetris_fon.ogg" type="audio/ogg; codecs=vorbis" preload="auto">
+   </audio>
+  </div>
+  <div id="tetrisright">
+   <p class="info">move left/right;
+   <br>&uarr;:rotate;
+   <br>&darr;:drop;
+   <br>Esc: pause
+   </p>
+   <canvas id="figurecanvas" width="120" height="120"></canvas>
+   <p class="info" id="tetriscount"></p>
+  </div>
+  <div class="clear"></div>
+ </div>
+ <script src='./js/tetris/game.js'></script>
+ <script src='./js/tetris/controller.js'></script>
+ <script src='./js/tetris/canvas.js'></script>
 
-	<script src="./js/tetris.js" type="module"></script> 
-</body>
+ </body>
 </html>
